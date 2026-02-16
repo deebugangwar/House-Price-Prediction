@@ -21,6 +21,26 @@ body{
     justify-content:center;
     align-items:center;
 }
+.logo-name{
+       position: fixed;
+       top: 20px;
+       left: 20px;
+       font-size: 22px;
+       font-weight: bold;
+       color: white;
+       letter-spacing: 1px;
+       z-index: 1000;
+       transition: 0.3s;
+
+}
+.logo-name:hover {
+    color: aliceblue;
+    cursor: pointer;
+
+}
+
+
+
 
 .container{
     background: rgba(0,0,0,0.7);
@@ -33,6 +53,7 @@ body{
 .container h2{
     text-align:center;
     margin-bottom:20px;
+    
 }
 
 input{
@@ -91,10 +112,16 @@ button:hover{
 
 <body>
 
+
 <div class="container">
 <h2>House Price Prediction</h2>
+<div class="logo-name"><a href="https://github.com/deebugangwar/House-Price-Prediction" target="_blank" style="color: ghostwhite;">
 
-<form action="/predict" method="post">
+    Deebu gangwar
+    </a>
+</div>
+
+<form action="/predict" method="post 
 
 <input type="number" placeholder="Area (sq ft)" name="area" min="50" required>
 
